@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './FlowingMenu.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export interface FlowingMenuItem {
   link: string;
@@ -155,7 +158,57 @@ function MenuItem({ link, text, image, speed, textColor, marqueeBgColor, marquee
     };
   }, [text, image, repetitions, speed]);
 
+  useEffect(() => {
+    const item = itemRef.current;
+    const marquee = marqueeRef.current;
+    const marqueeInner = marqueeInnerRef.current;
+    if (!item || !marquee || !marqueeInner) return;
+
+    let mm = gsap.matchMedia();
+
+    mm.add("(max-width: 768px)", () => {
+      const trigger = ScrollTrigger.create({
+        trigger: item,
+        start: 'top 70%',
+        end: 'bottom 30%',
+        onEnter: () => {
+          gsap
+            .timeline({ defaults: animationDefaults })
+            .set(marquee, { y: '-101%' }, 0)
+            .set(marqueeInner, { y: '101%' }, 0)
+            .to([marquee, marqueeInner], { y: '0%' }, 0);
+        },
+        onLeave: () => {
+          gsap
+            .timeline({ defaults: animationDefaults })
+            .to(marquee, { y: '-101%' }, 0)
+            .to(marqueeInner, { y: '101%' }, 0);
+        },
+        onEnterBack: () => {
+          gsap
+            .timeline({ defaults: animationDefaults })
+            .set(marquee, { y: '-101%' }, 0)
+            .set(marqueeInner, { y: '101%' }, 0)
+            .to([marquee, marqueeInner], { y: '0%' }, 0);
+        },
+        onLeaveBack: () => {
+          gsap
+            .timeline({ defaults: animationDefaults })
+            .to(marquee, { y: '-101%' }, 0)
+            .to(marqueeInner, { y: '101%' }, 0);
+        },
+      });
+
+      return () => {
+        trigger.kill();
+      };
+    });
+
+    return () => mm.revert();
+  }, []);
+
   const handleMouseEnter = (ev: React.MouseEvent) => {
+    if (window.innerWidth <= 768) return;
     if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current) return;
     const rect = itemRef.current.getBoundingClientRect();
     const x = ev.clientX - rect.left;
@@ -170,6 +223,7 @@ function MenuItem({ link, text, image, speed, textColor, marqueeBgColor, marquee
   };
 
   const handleMouseLeave = (ev: React.MouseEvent) => {
+    if (window.innerWidth <= 768) return;
     if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current) return;
     const rect = itemRef.current.getBoundingClientRect();
     const x = ev.clientX - rect.left;

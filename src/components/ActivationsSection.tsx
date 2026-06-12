@@ -3,10 +3,10 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import FlowingMenu from './FlowingMenu';
 
-import mojaveImg from '../assets/images/mojave.png';
-import sonomaImg from '../assets/images/sonoma.png';
-import montereyImg from '../assets/images/monterey.png';
-import sequoiaImg from '../assets/images/sequoia.png';
+import saffronImg from '../assets/images/saffron.png';
+import lemongrassImg from '../assets/images/lemongrass.png';
+import lavenderImg from '../assets/images/lavender.png';
+import sandalwoodImg from '../assets/images/sandalwood.png';
 
 import './ActivationsSection.css';
 
@@ -14,30 +14,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 const masterpieceItems = [
   { 
-    link: '#contact', 
-    text: 'Mojave', 
-    image: mojaveImg, 
+    link: '#shop', 
+    text: 'Saffron', 
+    image: saffronImg, 
     marqueeBgColor: '#D98E32', // Soft Amber
     marqueeTextColor: '#121212' 
   },
   { 
-    link: '#contact', 
-    text: 'Sonoma', 
-    image: sonomaImg, 
+    link: '#shop', 
+    text: 'Lemongrass', 
+    image: lemongrassImg, 
     marqueeBgColor: '#C9A86A', // Antique Gold
     marqueeTextColor: '#121212' 
   },
   { 
-    link: '#contact', 
-    text: 'Monterey', 
-    image: montereyImg, 
+    link: '#shop', 
+    text: 'Lavender', 
+    image: lavenderImg, 
     marqueeBgColor: '#E8D3A9', // Champagne Gold
     marqueeTextColor: '#121212' 
   },
   { 
-    link: '#contact', 
-    text: 'Sequoia', 
-    image: sequoiaImg, 
+    link: '#shop', 
+    text: 'Sandalwood', 
+    image: sandalwoodImg, 
     marqueeBgColor: '#C9A86A', // Antique Gold
     marqueeTextColor: '#121212' 
   }

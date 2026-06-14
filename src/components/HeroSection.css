@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding-top: 130px; /* Accounts for 86px nav + 44px announcement bar */
+  padding-top: 146px; /* Accounts for 102px nav + 44px announcement bar */
   z-index: 1;
   background-color: var(--color-light-cream);
 }
@@ -15,9 +15,9 @@
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
   gap: var(--space-16);
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 146px);
   position: relative;
-  margin-top: -45px; /* Pull content up to optical center and reduce top gap */
+  margin-top: -30px; /* Pull content up to optical center and reduce top gap */
 }
 
 /* Content (Left) */

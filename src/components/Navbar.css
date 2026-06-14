@@ -45,7 +45,7 @@
 }
 
 .navbar__logo-img {
-  height: 62px;
+  height: 78px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -53,7 +53,7 @@
 }
 
 .navbar--scrolled .navbar__logo-img {
-  height: 50px;
+  height: 60px;
 }
 
 /* Nav Links */
@@ -69,10 +69,10 @@
 }
 
 .navbar__link {
-  font-size: var(--text-sm);
-  font-weight: 500;
+  font-size: 15.5px;
+  font-weight: 600;
   color: var(--color-deep-bluish);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   position: relative;
   padding: var(--space-1) 0;
@@ -102,6 +102,8 @@
 /* CTA Button - Layout & display handled here, styling handled by InteractiveHoverButton.css */
 .navbar__cta {
   display: inline-flex;
+  font-size: 15px !important;
+  padding: 12px 28px !important;
 }
 
 .navbar__cta--mobile {
@@ -124,8 +126,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   border-radius: var(--radius-full);
   border: 1px solid rgba(248, 244, 238, 0.1);
   transition: all var(--transition-base);
@@ -138,7 +140,7 @@
 }
 
 .navbar__cart-icon {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   filter: grayscale(1) brightness(1.5);
   transition: filter var(--transition-fast);
 }

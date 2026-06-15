@@ -50,12 +50,12 @@ export const categories: CategoryItem[] = [
     id: 4,
     name: 'Dessert Candles',
     badge: 'Gourmet Treats',
-    tagline: 'Strawberry Bowl & Sweet Delights',
-    description: 'Ultra-realistic dessert candles crafted with whipped wax cream and delicious fruit wax details. Smells as sweet as it looks!',
+    tagline: 'Chai Comforts & Sweet Treats',
+    description: 'Deliciously realistic dessert and chai candles designed to capture the cozy aromas of sweet whipped cream and cardamom spiced tea.',
     priceText: 'Starting from ₹499',
     image: catDessert,
     color: '#D98E32', // Amber
-    tags: ['Whipped Wax', 'Gourmet Aromas', 'Realistic Details', 'Artisanal Design'],
+    tags: ['Cardamom Chai', 'Dessert Aromas', 'Spiced Tea', 'Artisanal Whipped Wax'],
   },
   {
     id: 5,

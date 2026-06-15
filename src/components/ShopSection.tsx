@@ -5,15 +5,12 @@ import ConfettiButton from './ConfettiButton';
 
 // Import all product and category image assets
 import candleAmber from '../assets/images/candle-amber.png';
-import candleJasmine from '../assets/images/candle-jasmine.png';
 import candleCedar from '../assets/images/candle-cedar.png';
 import lavender from '../assets/images/lavender.png';
 import lemongrass from '../assets/images/lemongrass.png';
 import catDecorative from '../assets/images/cat-decorative.png';
-import catDessert from '../assets/images/cat-dessert.png';
 import catColour from '../assets/images/cat-colour.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
-import blending from '../assets/images/blending.png';
 import pouring from '../assets/images/pouring.png';
 import sourcing from '../assets/images/sourcing.png';
 import heroCandle from '../assets/images/hero-candle.png';
@@ -34,6 +31,10 @@ import teaLights from '../assets/images/tea-lights.jpg';
 import scentedJars from '../assets/images/scented-jars.png';
 import smallBubble from '../assets/images/small-bubble.jpg';
 import bubbleCandle from '../assets/images/bubble-candle.jpg';
+
+// New dessert candle assets
+import dessertCandle from '../assets/images/dessert-candle.png';
+import chaiCandle from '../assets/images/chai-candle.jpg';
 
 import './ShopSection.css';
 
@@ -191,36 +192,25 @@ export const shopProducts: Product[] = [
   // Category 4: Dessert Candles
   {
     id: 4,
-    name: 'Jasmine Dream',
+    name: 'Dessert Candle',
     category: 'Dessert Candles',
-    scent: 'Night Jasmine · Tuberose · Musk',
-    description: 'An alluring floral scent that transports you to a blooming midnight garden.',
-    price: 1199,
-    image: candleJasmine,
-    color: '#B5C2B7',
-    tags: ['Delicate Scent', 'Soothing', 'Midnight Bloom'],
+    scent: 'Vanilla Whip · Sweet Strawberry · Cream',
+    description: 'A dessert which you can\'t eat but feel the fragrance',
+    price: 499,
+    image: dessertCandle,
+    color: '#E8D3A9',
+    tags: ['Sweet Cream', 'Strawberry Embed', 'Aromatic Dessert'],
   },
   {
     id: 402,
-    name: 'Strawberry Cream Bowl',
+    name: 'Chai Candle',
     category: 'Dessert Candles',
-    scent: 'Fresh Strawberry · Sweet Vanilla Cream',
-    description: 'A realistic glass bowl candle topped with whipped soy cream and strawberry wax embeds.',
-    price: 599,
-    image: catDessert,
-    color: '#D98E32',
-    tags: ['Whipped Cream Wax', 'Strawberry Scent', 'Gourmet'],
-  },
-  {
-    id: 403,
-    name: 'Chocolate Fudge Sundae',
-    category: 'Dessert Candles',
-    scent: 'Dark Chocolate · Fudge · Caramel',
-    description: 'A decadent treat candle featuring layers of fudge wax, whipped cream, and a wax cherry.',
-    price: 549,
-    image: blending,
-    color: '#D98E32',
-    tags: ['Decadent Cocoa', 'Sundae Mold', 'Sweet Delights'],
+    scent: 'Cardamom · Ginger · Cinnamon · Black Tea',
+    description: 'The Comfort of Chai, Captured in Wax.',
+    price: 499,
+    image: chaiCandle,
+    color: '#C9A86A',
+    tags: ['Chai Scent', 'Comforting Warmth', 'Biscuit Embed'],
   },
 
   // Category 5: Combos

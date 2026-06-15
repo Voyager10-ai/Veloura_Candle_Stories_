@@ -26,6 +26,9 @@ import icedStrawberryLatte from '../assets/images/iced-strawberry-latte.png';
 import icedMatchaLatte from '../assets/images/iced-matcha-latte.png';
 import icedLavenderLatte from '../assets/images/iced-lavender-latte.png';
 import raspberryFruit from '../assets/images/raspberry-fruit.jpg';
+import orangeFruit from '../assets/images/orange-fruit.jpg';
+import blueberryFruit from '../assets/images/blueberry-fruit.jpg';
+import strawberryFruitPremium from '../assets/images/strawberry-fruit-premium.png';
 
 import './ShopSection.css';
 
@@ -51,7 +54,7 @@ export const shopProducts: Product[] = [
     category: 'Premium Candles',
     scent: 'Rich Espresso · Warm Milk · Vanilla Foam',
     description: 'A perfect blend of elegance, warmth, and rich coffee fragrance.',
-    price: 1299,
+    price: 599,
     image: icedLatte,
     color: '#8B5A2B',
     tags: ['35hr Burn', 'Premium Soy', 'Rich Coffee'],
@@ -62,7 +65,7 @@ export const shopProducts: Product[] = [
     category: 'Premium Candles',
     scent: 'Sweet Strawberry · Creamy Milk · Vanilla',
     description: 'A candle as sweet as your favorite strawberry latte.',
-    price: 1399,
+    price: 649,
     image: icedStrawberryLatte,
     color: '#D11E58',
     tags: ['Sweet Cream', 'Handpoured', 'Strawberry Scent'],
@@ -73,7 +76,7 @@ export const shopProducts: Product[] = [
     category: 'Premium Candles',
     scent: 'Refreshing Matcha · Steamed Milk · Sweet Soy',
     description: 'Inspired by Matcha. Handcrafted for Serenity.',
-    price: 1399,
+    price: 649,
     image: icedMatchaLatte,
     color: '#5F8575',
     tags: ['Matcha Aroma', 'Serenity', 'Handcrafted'],
@@ -84,7 +87,7 @@ export const shopProducts: Product[] = [
     category: 'Premium Candles',
     scent: 'French Lavender · Smooth Espresso · Cream',
     description: 'Inspired by Lavender. Crafted for Tranquility.',
-    price: 1399,
+    price: 649,
     image: icedLavenderLatte,
     color: '#8A73B3',
     tags: ['Lavender Scent', 'Tranquility', 'Clean Burn'],
@@ -95,10 +98,43 @@ export const shopProducts: Product[] = [
     category: 'Premium Candles',
     scent: 'Fresh Raspberry · Tart Berries · Vanilla Cream',
     description: 'A Story of Sweetness in Every Glow.',
-    price: 1249,
+    price: 499,
     image: raspberryFruit,
     color: '#D10056',
     tags: ['Raspberry Essence', '25hr Burn', 'Sweet Delights'],
+  },
+  {
+    id: 106,
+    name: 'Orange Fruit Candle',
+    category: 'Premium Candles',
+    scent: 'Sweet Orange · Citrus Zest · Vanilla Cream',
+    description: 'A Burst of Freshness in Every Flame',
+    price: 499,
+    image: orangeFruit,
+    color: '#E67E22',
+    tags: ['Orange Essence', '25hr Burn', 'Zesty Vibe'],
+  },
+  {
+    id: 107,
+    name: 'Blueberry Fruit Candle',
+    category: 'Premium Candles',
+    scent: 'Fresh Blueberry · Wild Berries · Vanilla Cream',
+    description: 'A Berry Calm in Every Glow.',
+    price: 499,
+    image: blueberryFruit,
+    color: '#1F4068',
+    tags: ['Blueberry Essence', '25hr Burn', 'Calming Vibe'],
+  },
+  {
+    id: 108,
+    name: 'Strawberry Fruit Candle',
+    category: 'Premium Candles',
+    scent: 'Juicy Strawberry · Sweet Cream · Vanilla',
+    description: 'A Strawberry Dream in Every Flame.',
+    price: 499,
+    image: strawberryFruitPremium,
+    color: '#D11E58',
+    tags: ['Strawberry Essence', '25hr Burn', 'Sweet Delight'],
   },
 
   // Category 3: Decorative Candles

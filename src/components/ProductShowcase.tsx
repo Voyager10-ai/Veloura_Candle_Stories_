@@ -29,11 +29,11 @@ export const categories: CategoryItem[] = [
     name: 'Premium Candles',
     badge: 'Luxury Collection',
     tagline: 'Luxury Iced Latte & Fruit Blends',
-    description: 'Exquisite, hand-poured luxury soy candles featuring our signature iced latte series and rich raspberry fruit blends.',
-    priceText: 'Starting from ₹1,249',
+    description: 'Exquisite, hand-poured luxury soy candles featuring our signature iced latte series and fresh fruit jelly delights.',
+    priceText: 'Starting from ₹499',
     image: catPremium,
     color: '#D98E32', // Amber
-    tags: ['Iced Latte Series', 'Raspberry Fruit', 'Premium Soy Wax', 'Hand-poured Luxury'],
+    tags: ['Iced Latte Series', 'Fruit Jelly Delights', 'Premium Soy Wax', 'Hand-poured Luxury'],
   },
   {
     id: 3,

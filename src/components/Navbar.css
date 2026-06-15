@@ -210,6 +210,7 @@
   padding: 0 14px;
   border-radius: var(--radius-full);
   border: 1px solid rgba(248, 244, 238, 0.1);
+  background: transparent;
   color: var(--color-deep-bluish);
   text-decoration: none;
   font-family: var(--font-sans);

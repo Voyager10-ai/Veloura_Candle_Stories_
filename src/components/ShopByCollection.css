@@ -131,7 +131,7 @@
 .collections-nav__label {
   margin-top: var(--space-3);
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--color-text-muted);
@@ -139,9 +139,12 @@
   text-align: center;
   transition: color 0.3s ease, font-weight 0.3s ease;
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.4;
+  height: 2.8em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .collections-nav__item:hover .collections-nav__label {
@@ -223,8 +226,9 @@
   }
   
   .collections-nav__label {
-    font-size: 11px;
+    font-size: 9.5px;
     margin-top: var(--space-2);
+    height: 2.8em;
   }
 
   .collections-nav__arrow {

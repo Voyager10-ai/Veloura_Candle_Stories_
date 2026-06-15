@@ -286,3 +286,178 @@
   color: rgba(248, 244, 238, 0.7);
   margin-top: var(--space-2);
 }
+
+/* ===== OTP Specific Styling ===== */
+.otp-subtitle {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(248, 244, 238, 0.5);
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.otp-inputs-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: var(--space-4) 0;
+}
+
+.otp-digit-input {
+  width: 100%;
+  max-width: 48px;
+  height: 52px;
+  background: rgba(248, 244, 238, 0.02);
+  border: 1px solid rgba(248, 244, 238, 0.12);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 700;
+  color: #C9A86A;
+  outline: none;
+  transition: all var(--transition-base);
+}
+
+.otp-digit-input:focus {
+  border-color: #C9A86A;
+  background: rgba(201, 168, 106, 0.04);
+  box-shadow: 0 0 12px rgba(201, 168, 106, 0.25);
+}
+
+.otp-timer-box {
+  text-align: center;
+  margin: var(--space-2) 0;
+}
+
+.otp-timer-text {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  color: rgba(248, 244, 238, 0.35);
+}
+
+.otp-resend-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: #C9A86A;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.otp-resend-btn:hover {
+  color: #E8D3A9;
+}
+
+.auth-modal__row-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -8px;
+}
+
+.auth-modal__otp-toggle-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #C9A86A;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.auth-modal__otp-toggle-btn:hover {
+  color: #E8D3A9;
+  text-decoration: underline;
+}
+
+/* ===== Mock Email Notification Toast ===== */
+.otp-notification-toast {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background: #1e1e1e;
+  border: 1px solid rgba(201, 168, 106, 0.3);
+  border-left: 4px solid #C9A86A;
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), var(--shadow-glow);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  z-index: 100001;
+  animation: otpToastSlideDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes otpToastSlideDown {
+  from {
+    top: -80px;
+    opacity: 0;
+  }
+  to {
+    top: 24px;
+    opacity: 1;
+  }
+}
+
+.otp-notification-toast__icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.otp-notification-toast__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.otp-notification-toast__title {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #C9A86A;
+}
+
+.otp-notification-toast__msg {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: #F8F4EE;
+  margin-top: 2px;
+}
+
+.otp-notification-toast__msg strong {
+  font-size: 14px;
+  color: #C9A86A;
+  letter-spacing: 0.05em;
+  background: rgba(201, 168, 106, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.otp-notification-toast__close {
+  background: transparent;
+  border: none;
+  color: rgba(248, 244, 238, 0.4);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+  transition: color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.otp-notification-toast__close:hover {
+  color: #F8F4EE;
+}
+

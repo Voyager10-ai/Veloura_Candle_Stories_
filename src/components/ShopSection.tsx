@@ -5,7 +5,6 @@ import ConfettiButton from './ConfettiButton';
 
 // Import all product and category image assets
 import candleAmber from '../assets/images/candle-amber.png';
-import candleRose from '../assets/images/candle-rose.png';
 import candleJasmine from '../assets/images/candle-jasmine.png';
 import candleCedar from '../assets/images/candle-cedar.png';
 import lavender from '../assets/images/lavender.png';
@@ -144,39 +143,6 @@ export const shopProducts: Product[] = [
   },
 
   // Category 3: Decorative Candles
-  {
-    id: 3,
-    name: 'Rose & Blush',
-    category: 'Decorative Candles',
-    scent: 'Peony · Rose Water · Amber',
-    description: 'Delicate floral notes dance with soft warmth to create romantic ambiance.',
-    price: 1299,
-    image: candleRose,
-    color: '#E8D3A9',
-    tags: ['Floral', 'Therapeutic', 'Natural Oils'],
-  },
-  {
-    id: 302,
-    name: 'Pastel Bubble Cube',
-    category: 'Decorative Candles',
-    scent: 'Cotton Candy · Lavender',
-    description: 'The iconic aesthetic bubble cube candle, perfect as a home decor focal point.',
-    price: 399,
-    image: catDecorative,
-    color: '#E8D3A9',
-    tags: ['Aesthetic Decor', 'Pastel Shades', 'Bubble Mold'],
-  },
-  {
-    id: 303,
-    name: 'Venus Bust Art Candle',
-    category: 'Decorative Candles',
-    scent: 'Sandalwood · Musk',
-    description: 'A sculptural classical bust candle, hand-poured in marble-finish soy wax.',
-    price: 499,
-    image: pouring,
-    color: '#E8D3A9',
-    tags: ['Sculptural Art', 'Marble Finish', 'Collector Item'],
-  },
   {
     id: 304,
     name: 'Tea light candles',

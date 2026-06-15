@@ -36,9 +36,9 @@ const testimonials: Testimonial[] = [
     id: 3,
     name: 'Ananya Reddy',
     location: 'Hyderabad, India',
-    text: 'Gifted Rose & Blush to my mother and she absolutely loved it. The packaging is stunning and the candle itself is a work of art. Will be ordering more.',
+    text: 'Gifted Scented jar candles to my mother and she absolutely loved them. The packaging is stunning and the candles themselves are works of art. Will be ordering more.',
     rating: 5,
-    product: 'Rose & Blush',
+    product: 'Scented jar candles',
   },
 ];
 

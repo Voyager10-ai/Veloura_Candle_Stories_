@@ -65,7 +65,7 @@ function App() {
       <CursorEffects />
       <ParticleBackground />
       <AnnouncementBar />
-      <Navbar onCartClick={() => setCartOpen(true)} cartCount={cartCount} />
+      <Navbar onCartClick={() => setCartOpen(true)} cartCount={cartCount} onCategoryFilter={setActiveCategoryFilter} />
       <main>
         <HeroSection />
         <ShopByCollection activeCategoryFilter={activeCategoryFilter} setActiveCategoryFilter={setActiveCategoryFilter} />

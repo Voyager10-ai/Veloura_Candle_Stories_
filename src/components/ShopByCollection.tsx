@@ -4,7 +4,6 @@ import './ShopByCollection.css';
 // Import image assets
 import logoImg from '../assets/images/logo.png';
 import catPremium from '../assets/images/cat-premium.png';
-import catTaper from '../assets/images/cat-taper.png';
 import catDecorative from '../assets/images/cat-decorative.png';
 import catDessert from '../assets/images/cat-dessert.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
@@ -34,13 +33,6 @@ const collections: CollectionItem[] = [
     label: 'Premium Candles',
     image: catPremium,
     color: 'linear-gradient(45deg, #D98E32, #f39c12)',
-  },
-  {
-    id: 'Taper Candles',
-    name: 'Taper Candles',
-    label: 'Taper Candles',
-    image: catTaper,
-    color: 'linear-gradient(45deg, #C9A86A, #95a5a6)',
   },
   {
     id: 'Decorative Candles',

@@ -5,21 +5,18 @@ import ConfettiButton from './ConfettiButton';
 
 // Import all product and category image assets
 import candleAmber from '../assets/images/candle-amber.png';
-import candleSage from '../assets/images/candle-sage.png';
 import candleRose from '../assets/images/candle-rose.png';
 import candleJasmine from '../assets/images/candle-jasmine.png';
 import candleCedar from '../assets/images/candle-cedar.png';
 import saffron from '../assets/images/saffron.png';
 import lavender from '../assets/images/lavender.png';
 import lemongrass from '../assets/images/lemongrass.png';
-import catTaper from '../assets/images/cat-taper.png';
 import catDecorative from '../assets/images/cat-decorative.png';
 import catDessert from '../assets/images/cat-dessert.png';
 import catColour from '../assets/images/cat-colour.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
 import blending from '../assets/images/blending.png';
 import pouring from '../assets/images/pouring.png';
-import curing from '../assets/images/curing.png';
 import sourcing from '../assets/images/sourcing.png';
 import heroCandle from '../assets/images/hero-candle.png';
 import logo from '../assets/images/logo.png';
@@ -74,41 +71,6 @@ export const shopProducts: Product[] = [
     image: sourcing,
     color: '#D98E32',
     tags: ['Botanical Decor', 'Floral Scent', 'Soothe'],
-  },
-
-  // Category 2: Taper Candles
-  {
-    id: 2,
-    name: 'Sage & Sea Tapers',
-    category: 'Taper Candles',
-    scent: 'Soft Sage · Eucalyptus · Moss',
-    description: 'Fresh coastal air meets earthy botanicals for a grounding experience.',
-    price: 349,
-    image: candleSage,
-    color: '#C9A86A',
-    tags: ['Ribbed Texturing', 'Sage Green', 'Scented'],
-  },
-  {
-    id: 202,
-    name: 'Spiraled Honeycomb Tapers',
-    category: 'Taper Candles',
-    scent: 'Unscented (Pure Beeswax Aroma)',
-    description: 'Textured taper candles with spiral geometric lines, burning dripless and clean.',
-    price: 299,
-    image: catTaper,
-    color: '#C9A86A',
-    tags: ['Organic Tones', 'Dripless', 'Pair of 2'],
-  },
-  {
-    id: 203,
-    name: 'Terracotta Classic Tapers',
-    category: 'Taper Candles',
-    scent: 'Unscented',
-    description: 'Warm earth-toned taper candles, hand-dipped and designed for elegant table layouts.',
-    price: 299,
-    image: curing,
-    color: '#C9A86A',
-    tags: ['Terracotta Color', 'Hand-Dipped', 'Elegant'],
   },
 
   // Category 3: Decorative Candles
@@ -193,17 +155,7 @@ export const shopProducts: Product[] = [
     color: '#C9A86A',
     tags: ['Duo Set', 'Gift-Ready', 'Best Value'],
   },
-  {
-    id: 502,
-    name: 'Harmony Taper Trio',
-    category: 'Combos',
-    scent: 'Soft Sage & Lavender',
-    description: 'Three matching hand-poured taper candles in complementary organic tones, complete with a ceramic tray.',
-    price: 799,
-    image: candleSage,
-    color: '#C9A86A',
-    tags: ['Set of 3', 'Home Styling', 'Ceramic Tray'],
-  },
+
   {
     id: 503,
     name: 'Floral Scent & Sachet Pack',
@@ -233,7 +185,7 @@ export const shopProducts: Product[] = [
     name: 'Calm & Ground Self-Care Box',
     category: 'Gift Box',
     scent: 'Sage · Lavender · Lemongrass',
-    description: 'A soothing gift set containing Sage & Sea tapers, lemongrass melts, and an organic cotton ritual towel.',
+    description: 'A soothing gift set containing Sage & Sea votives, lemongrass melts, and an organic cotton ritual towel.',
     price: 999,
     image: lemongrass,
     color: '#E8D3A9',

@@ -3,7 +3,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ConfettiButton from './ConfettiButton';
 import catPremium from '../assets/images/cat-premium.png';
-import catTaper from '../assets/images/cat-taper.png';
 import catDecorative from '../assets/images/cat-decorative.png';
 import catDessert from '../assets/images/cat-dessert.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
@@ -35,17 +34,6 @@ export const categories: CategoryItem[] = [
     image: catPremium,
     color: '#D98E32', // Amber
     tags: ['100% Soy Wax', 'Gold Foil Decor', 'Extra Long Burn', 'Premium Oils'],
-  },
-  {
-    id: 2,
-    name: 'Taper Candles',
-    badge: 'Earthy Collection',
-    tagline: 'Spiraled & Textured Elegance',
-    description: 'Elegant spiraled taper candles in organic tones. Perfect for dining settings and ambient visual aesthetics.',
-    priceText: 'Starting from ₹299',
-    image: catTaper,
-    color: '#C9A86A', // Gold
-    tags: ['Spiraled Design', 'Dripless Wax', 'Clean Burning', 'Cozy Warmth'],
   },
   {
     id: 3,

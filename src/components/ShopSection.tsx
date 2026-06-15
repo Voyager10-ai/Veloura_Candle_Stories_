@@ -30,6 +30,12 @@ import orangeFruit from '../assets/images/orange-fruit.jpg';
 import blueberryFruit from '../assets/images/blueberry-fruit.jpg';
 import strawberryFruitPremium from '../assets/images/strawberry-fruit-premium.png';
 
+// New decorative candle assets
+import teaLights from '../assets/images/tea-lights.jpg';
+import scentedJars from '../assets/images/scented-jars.png';
+import smallBubble from '../assets/images/small-bubble.jpg';
+import bubbleCandle from '../assets/images/bubble-candle.jpg';
+
 import './ShopSection.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -170,6 +176,50 @@ export const shopProducts: Product[] = [
     image: pouring,
     color: '#E8D3A9',
     tags: ['Sculptural Art', 'Marble Finish', 'Collector Item'],
+  },
+  {
+    id: 304,
+    name: 'Tea light candles',
+    category: 'Decorative Candles',
+    scent: 'Lavender · Lemongrass · Mint',
+    description: 'Perfect for festivals, aromatic , peaceful',
+    price: 299,
+    image: teaLights,
+    color: '#E8D3A9',
+    tags: ['Festive Decor', 'Aromatic Scent', 'Peaceful Burn'],
+  },
+  {
+    id: 305,
+    name: 'Scented jar candles',
+    category: 'Decorative Candles',
+    scent: 'Lavender · Sandalwood · Jasmine',
+    description: 'Fragrance candles with aromatic scents',
+    price: 499,
+    image: scentedJars,
+    color: '#E8D3A9',
+    tags: ['Scented Jars', 'Relaxing Aroma', 'Handpoured'],
+  },
+  {
+    id: 306,
+    name: 'Small bubble candle',
+    category: 'Decorative Candles',
+    scent: 'Sweet Vanilla · Cotton Candy',
+    description: 'A charming mini bubble candle, best for home decor and gifting.',
+    price: 299,
+    image: smallBubble,
+    color: '#E8D3A9',
+    tags: ['Mini Bubble', 'Heart Accent', 'Aesthetic Gift'],
+  },
+  {
+    id: 307,
+    name: 'Bubble candle',
+    category: 'Decorative Candles',
+    scent: 'Lavender · Vanilla · Musk',
+    description: 'Best for home decor, gifting',
+    price: 399,
+    image: bubbleCandle,
+    color: '#E8D3A9',
+    tags: ['Aesthetic Home', 'Gifting Idea', 'Bubble Mold'],
   },
 
   // Category 4: Dessert Candles

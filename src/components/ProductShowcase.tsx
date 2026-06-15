@@ -28,12 +28,12 @@ export const categories: CategoryItem[] = [
     id: 1,
     name: 'Premium Candles',
     badge: 'Luxury Collection',
-    tagline: 'Sunflower & Gold-foiled Blends',
-    description: 'Exquisite, hand-poured luxury soy candles with premium fragrance oils, designed to make a statement in any space.',
-    priceText: 'Starting from ₹599',
+    tagline: 'Luxury Iced Latte & Fruit Blends',
+    description: 'Exquisite, hand-poured luxury soy candles featuring our signature iced latte series and rich raspberry fruit blends.',
+    priceText: 'Starting from ₹1,249',
     image: catPremium,
     color: '#D98E32', // Amber
-    tags: ['100% Soy Wax', 'Gold Foil Decor', 'Extra Long Burn', 'Premium Oils'],
+    tags: ['Iced Latte Series', 'Raspberry Fruit', 'Premium Soy Wax', 'Hand-poured Luxury'],
   },
   {
     id: 3,

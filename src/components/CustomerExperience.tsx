@@ -20,9 +20,9 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: 'Priya Sharma',
     location: 'Mumbai, India',
-    text: 'The Amber & Oud candle has completely transformed my living room. The scent is luxurious without being overwhelming — it fills the entire space with warmth.',
+    text: 'The Iced Latte Candle has completely transformed my living room. The scent is luxurious without being overwhelming — it fills the entire space with warmth.',
     rating: 5,
-    product: 'Amber & Oud',
+    product: 'Iced Latte Candle',
   },
   {
     id: 2,
@@ -101,11 +101,11 @@ const CustomerExperience = () => {
               backgroundColor="rgba(255, 255, 255, 0.02)"
               borderRadius={16}
               glowColor={
-                t.product === 'Amber & Oud' ? '33 70 52' :
+                t.product === 'Iced Latte Candle' ? '33 70 52' :
                 t.product === 'Sage & Sea' ? '39 45 60' : '39 51 79'
               }
               colors={
-                t.product === 'Amber & Oud' ? ['#D98E32', '#C9A86A', '#F8F4EE'] :
+                t.product === 'Iced Latte Candle' ? ['#8B5A2B', '#C9A86A', '#F8F4EE'] :
                 t.product === 'Sage & Sea' ? ['#C9A86A', '#E8D3A9', '#F8F4EE'] : ['#E8D3A9', '#C9A86A', '#F8F4EE']
               }
               glowRadius={40}

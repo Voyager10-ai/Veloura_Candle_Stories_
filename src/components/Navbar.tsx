@@ -654,7 +654,7 @@ const Navbar = ({ user, onLogout, onSignInClick, onCartClick, cartCount, onCateg
                   <label className="settings-label-text">Preferred Scent Profile</label>
                   <select className="settings-select" value={prefScent} onChange={(e) => setPrefScent(e.target.value)}>
                     <option>French Lavender</option>
-                    <option>Royal Amber & Oud</option>
+                    <option>Rich Coffee Scent</option>
                     <option>Sandalwood & Musk</option>
                     <option>Jasmine Blossom</option>
                   </select>

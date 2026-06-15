@@ -8,7 +8,6 @@ import candleAmber from '../assets/images/candle-amber.png';
 import candleRose from '../assets/images/candle-rose.png';
 import candleJasmine from '../assets/images/candle-jasmine.png';
 import candleCedar from '../assets/images/candle-cedar.png';
-import saffron from '../assets/images/saffron.png';
 import lavender from '../assets/images/lavender.png';
 import lemongrass from '../assets/images/lemongrass.png';
 import catDecorative from '../assets/images/cat-decorative.png';
@@ -20,6 +19,13 @@ import pouring from '../assets/images/pouring.png';
 import sourcing from '../assets/images/sourcing.png';
 import heroCandle from '../assets/images/hero-candle.png';
 import logo from '../assets/images/logo.png';
+
+// New premium candle assets
+import icedLatte from '../assets/images/iced-latte.png';
+import icedStrawberryLatte from '../assets/images/iced-strawberry-latte.png';
+import icedMatchaLatte from '../assets/images/iced-matcha-latte.png';
+import icedLavenderLatte from '../assets/images/iced-lavender-latte.png';
+import raspberryFruit from '../assets/images/raspberry-fruit.jpg';
 
 import './ShopSection.css';
 
@@ -41,36 +47,58 @@ export const shopProducts: Product[] = [
   // Category 1: Premium Candles
   {
     id: 1,
-    name: 'Amber & Oud',
+    name: 'Iced Latte Candle',
     category: 'Premium Candles',
-    scent: 'Sandalwood · Vanilla · Bergamot',
-    description: 'A warm, enveloping fragrance that wraps your space in cozy sophistication.',
+    scent: 'Rich Espresso · Warm Milk · Vanilla Foam',
+    description: 'A perfect blend of elegance, warmth, and rich coffee fragrance.',
     price: 1299,
-    image: candleAmber,
-    color: '#D98E32',
-    tags: ['Soy Wax', 'Warm Vibe', '60hr Burn'],
+    image: icedLatte,
+    color: '#8B5A2B',
+    tags: ['35hr Burn', 'Premium Soy', 'Rich Coffee'],
   },
   {
     id: 102,
-    name: 'Royal Saffron Glow',
+    name: 'Iced Strawberry Latte Candle',
     category: 'Premium Candles',
-    scent: 'Kashmir Saffron · Rose · Patchouli',
-    description: 'An exotic scent celebrating rare spices, hand-poured in a dark crimson glass jar.',
-    price: 1499,
-    image: saffron,
-    color: '#D98E32',
-    tags: ['Exotic Blend', 'Crimson Jar', 'Rich Throw'],
+    scent: 'Sweet Strawberry · Creamy Milk · Vanilla',
+    description: 'A candle as sweet as your favorite strawberry latte.',
+    price: 1399,
+    image: icedStrawberryLatte,
+    color: '#D11E58',
+    tags: ['Sweet Cream', 'Handpoured', 'Strawberry Scent'],
   },
   {
     id: 103,
-    name: 'Golden Sunflower Blend',
+    name: 'Iced Matcha Latte Candle',
     category: 'Premium Candles',
-    scent: 'Sunflower Nectar · Honey · Vetiver',
-    description: 'A bright, uplifting floral scent decorated with pressed organic sunflower petals.',
+    scent: 'Refreshing Matcha · Steamed Milk · Sweet Soy',
+    description: 'Inspired by Matcha. Handcrafted for Serenity.',
     price: 1399,
-    image: sourcing,
-    color: '#D98E32',
-    tags: ['Botanical Decor', 'Floral Scent', 'Soothe'],
+    image: icedMatchaLatte,
+    color: '#5F8575',
+    tags: ['Matcha Aroma', 'Serenity', 'Handcrafted'],
+  },
+  {
+    id: 104,
+    name: 'Iced Lavender Latte Candle',
+    category: 'Premium Candles',
+    scent: 'French Lavender · Smooth Espresso · Cream',
+    description: 'Inspired by Lavender. Crafted for Tranquility.',
+    price: 1399,
+    image: icedLavenderLatte,
+    color: '#8A73B3',
+    tags: ['Lavender Scent', 'Tranquility', 'Clean Burn'],
+  },
+  {
+    id: 105,
+    name: 'Raspberry Fruit Candle',
+    category: 'Premium Candles',
+    scent: 'Fresh Raspberry · Tart Berries · Vanilla Cream',
+    description: 'A Story of Sweetness in Every Glow.',
+    price: 1249,
+    image: raspberryFruit,
+    color: '#D10056',
+    tags: ['Raspberry Essence', '25hr Burn', 'Sweet Delights'],
   },
 
   // Category 3: Decorative Candles

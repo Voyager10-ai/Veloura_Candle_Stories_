@@ -27,6 +27,9 @@ const AnnouncementBar = () => {
           ))}
         </div>
       </div>
+      <a href="#contact" className="announcement-bar__help">
+        Need Help?
+      </a>
     </div>
   );
 };

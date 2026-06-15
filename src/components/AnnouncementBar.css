@@ -57,6 +57,47 @@
   animation: announcementDotCycle 4s ease-in-out infinite;
 }
 
+/* Need Help? link – pinned to the right */
+.announcement-bar__help {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 36px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2;
+  animation: announcementTextCycle 4s ease-in-out infinite;
+  background: linear-gradient(90deg, transparent 0%, var(--announcement-bg, #C9A86A) 30%);
+  transition: opacity 0.3s ease;
+}
+
+.announcement-bar__help::before {
+  content: '?';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 800;
+  margin-right: 6px;
+  border: 1.5px solid currentColor;
+  line-height: 1;
+}
+
+.announcement-bar__help:hover {
+  opacity: 0.8;
+}
+
 /* Loop animations shifting by exactly 1/3 of the track width */
 @keyframes announcementMarquee {
   0% {
@@ -77,10 +118,12 @@
   0%, 42.5%, 100% {
     background-color: #C9A86A; /* Golden color */
     border-bottom-color: rgba(18, 18, 18, 0.2);
+    --announcement-bg: #C9A86A;
   }
   50%, 92.5% {
     background-color: #121212; /* Black color */
     border-bottom-color: rgba(201, 168, 106, 0.25);
+    --announcement-bg: #121212;
   }
 }
 
@@ -108,5 +151,13 @@
   }
   50%, 92.5% {
     color: #C9A86A; /* Gold dot on black background */
+  }
+}
+
+/* Hide help link on very small screens to save space */
+@media (max-width: 480px) {
+  .announcement-bar__help {
+    padding: 0 12px 0 24px;
+    font-size: 10px;
   }
 }

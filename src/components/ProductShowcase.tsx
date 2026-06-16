@@ -30,7 +30,7 @@ export const categories: CategoryItem[] = [
     badge: 'Luxury Collection',
     tagline: 'Luxury Iced Latte & Fruit Blends',
     description: 'Exquisite, hand-poured luxury soy candles featuring our signature iced latte series and fresh fruit jelly delights.',
-    priceText: 'Starting from ₹499',
+    priceText: 'Starting from ₹399',
     image: catPremium,
     color: '#D98E32', // Amber
     tags: ['Iced Latte Series', 'Fruit Jelly Delights', 'Premium Soy Wax', 'Hand-poured Luxury'],
@@ -41,7 +41,7 @@ export const categories: CategoryItem[] = [
     badge: 'Artistic Decor',
     tagline: 'Aesthetic Bubble & Geometric Shapes',
     description: 'Charming geometric and bubble candles in pastel tones, crafted to serve as beautiful focal points in your home.',
-    priceText: 'Starting from ₹399',
+    priceText: 'Starting from ₹99',
     image: catDecorative,
     color: '#E8D3A9', // Blush / Champagne Gold
     tags: ['Modern Shapes', 'Hand-molded', 'Aesthetic Home', 'Vibrant Vibe'],
@@ -52,7 +52,7 @@ export const categories: CategoryItem[] = [
     badge: 'Gourmet Treats',
     tagline: 'Chai Comforts & Sweet Treats',
     description: 'Deliciously realistic dessert and chai candles designed to capture the cozy aromas of sweet whipped cream and cardamom spiced tea.',
-    priceText: 'Starting from ₹499',
+    priceText: 'Starting from ₹149',
     image: catDessert,
     color: '#D98E32', // Amber
     tags: ['Cardamom Chai', 'Dessert Aromas', 'Spiced Tea', 'Artisanal Whipped Wax'],

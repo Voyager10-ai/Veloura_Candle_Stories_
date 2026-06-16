@@ -42,6 +42,7 @@ import roseFlower from '../assets/images/rose-flower.jpg';
 import daisyFlower from '../assets/images/daisy-flower.jpg';
 import sunflowerCandle from '../assets/images/sunflower-candle.jpg';
 import peonyCandle from '../assets/images/peony-candle.jpg';
+import tulipCandle from '../assets/images/tulip-candle.jpg';
 
 import './ShopSection.css';
 
@@ -249,6 +250,17 @@ export const shopProducts: Product[] = [
     image: peonyCandle,
     color: '#E8D3A9',
     tags: ['Peony Petals', 'Floral Scent', 'Aesthetic Home'],
+  },
+  {
+    id: 313,
+    name: 'Tulip Flower Candle',
+    category: 'Decorative Candles',
+    scent: 'Fresh Tulips · Spring Dew',
+    description: 'Blooming Beauty, Beautifully Lit.',
+    price: 199,
+    image: tulipCandle,
+    color: '#E8D3A9',
+    tags: ['Tulip Mold', 'Spring Blossom', 'Handpoured'],
   },
 
   // Category 4: Dessert Candles

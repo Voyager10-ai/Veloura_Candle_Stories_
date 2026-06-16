@@ -70,14 +70,14 @@ export const categories: CategoryItem[] = [
   },
   {
     id: 6,
-    name: 'Colour Candles',
-    badge: 'Vibrant Light',
-    tagline: 'Rich Pillar & Colorful Accents',
-    description: 'Vibrant, hand-poured pillar candles in rich color tones, designed to bring warmth and energy to your space.',
+    name: 'Festival Candles',
+    badge: 'Festival Specials',
+    tagline: 'Rich Pillar & Festive Accents',
+    description: 'Beautiful hand-poured candles and tealights, designed to bring warmth and festive energy to your celebrations.',
     priceText: 'Starting from ₹249',
     image: catColour,
     color: '#E8D3A9', // Blush
-    tags: ['Pillar Candles', 'Rich Crimson Red', 'Vibrant Color', 'Multi-Height Pack'],
+    tags: ['Pillar Candles', 'Tealight Packs', 'Festival Joy', 'Celebration Decor'],
   },
 ];
 

@@ -382,11 +382,11 @@ export const shopProducts: Product[] = [
     tags: ['Bulk Order', 'Logo Print', 'Wedding Favours'],
   },
 
-  // Category 8: Colour Candles
+  // Category 8: Festival Candles
   {
     id: 801,
     name: 'Cedarwood Forest',
-    category: 'Colour Candles',
+    category: 'Festival Candles',
     scent: 'Cedar · Cypress · Pine Needle',
     description: 'Woodland moss and towering evergreens capture the stillness of mountain air.',
     price: 1199,
@@ -397,7 +397,7 @@ export const shopProducts: Product[] = [
   {
     id: 802,
     name: 'Crimson Red Pillar Set',
-    category: 'Colour Candles',
+    category: 'Festival Candles',
     scent: 'Spiced Apple · Cinnamon',
     description: 'A beautiful set of multi-height solid red pillar candles with a warm spicy fragrance.',
     price: 599,
@@ -408,7 +408,7 @@ export const shopProducts: Product[] = [
   {
     id: 803,
     name: 'Ocean Blue Tealights Pack',
-    category: 'Colour Candles',
+    category: 'Festival Candles',
     scent: 'Sea Breeze · Jasmine',
     description: 'A pack of 6 color-accented soy tealights for floating displays and candle holders.',
     price: 249,

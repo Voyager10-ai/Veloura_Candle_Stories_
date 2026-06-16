@@ -70,9 +70,9 @@ const collections: CollectionItem[] = [
     color: 'linear-gradient(45deg, #D98E32, #1abc9c)',
   },
   {
-    id: 'Colour Candles',
-    name: 'Colour Candles',
-    label: 'Colour Candles',
+    id: 'Festival Candles',
+    name: 'Festival Candles',
+    label: 'Festival Candles',
     image: catColour,
     color: 'linear-gradient(45deg, #E8D3A9, #3498db)',
   },

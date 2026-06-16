@@ -8,6 +8,7 @@ import catDecorative from '../assets/images/cat-decorative.png';
 import catDessert from '../assets/images/cat-dessert.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
 import catColour from '../assets/images/cat-colour.png';
+import festivalCandlesImage from '../assets/images/festival-candles.png';
 import curing from '../assets/images/curing.png';
 import pouring from '../assets/images/pouring.png';
 
@@ -73,7 +74,7 @@ const collections: CollectionItem[] = [
     id: 'Festival Candles',
     name: 'Festival Candles',
     label: 'Festival Candles',
-    image: catColour,
+    image: festivalCandlesImage,
     color: 'linear-gradient(45deg, #E8D3A9, #3498db)',
   },
 ];

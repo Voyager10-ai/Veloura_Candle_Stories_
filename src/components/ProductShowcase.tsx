@@ -7,6 +7,7 @@ import catDecorative from '../assets/images/cat-decorative.png';
 import catDessert from '../assets/images/cat-dessert.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
 import catColour from '../assets/images/cat-colour.png';
+import festivalCandlesImage from '../assets/images/festival-candles.png';
 import './ProductShowcase.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -75,7 +76,7 @@ export const categories: CategoryItem[] = [
     tagline: 'Rich Pillar & Festive Accents',
     description: 'Beautiful hand-poured candles and tealights, designed to bring warmth and festive energy to your celebrations.',
     priceText: 'Starting from ₹249',
-    image: catColour,
+    image: festivalCandlesImage,
     color: '#E8D3A9', // Blush
     tags: ['Pillar Candles', 'Tealight Packs', 'Festival Joy', 'Celebration Decor'],
   },

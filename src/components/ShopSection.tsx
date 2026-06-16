@@ -10,6 +10,7 @@ import lavender from '../assets/images/lavender.png';
 import lemongrass from '../assets/images/lemongrass.png';
 import catDecorative from '../assets/images/cat-decorative.png';
 import catColour from '../assets/images/cat-colour.png';
+import festivalCandlesImage from '../assets/images/festival-candles.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
 import pouring from '../assets/images/pouring.png';
 import sourcing from '../assets/images/sourcing.png';
@@ -401,7 +402,7 @@ export const shopProducts: Product[] = [
     scent: 'Spiced Apple · Cinnamon',
     description: 'A beautiful set of multi-height solid red pillar candles with a warm spicy fragrance.',
     price: 599,
-    image: catColour,
+    image: festivalCandlesImage,
     color: '#E8D3A9',
     tags: ['Solid Color Pillar', 'Spiced Apple', 'Holiday Vibe'],
   },

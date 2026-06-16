@@ -7,12 +7,11 @@ import ConfettiButton from './ConfettiButton';
 import candleAmber from '../assets/images/candle-amber.png';
 
 import lavender from '../assets/images/lavender.png';
-import lemongrass from '../assets/images/lemongrass.png';
-import catDecorative from '../assets/images/cat-decorative.png';
+
 
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
 import pouring from '../assets/images/pouring.png';
-import sourcing from '../assets/images/sourcing.png';
+
 
 import logo from '../assets/images/logo.png';
 
@@ -41,6 +40,9 @@ import festivalMithai from '../assets/images/festival-mithai.jpg';
 import lotusUrli from '../assets/images/lotus-urli.jpg';
 import modakCandle from '../assets/images/modak-candle.jpg';
 import diyaCandle from '../assets/images/diya-candle.jpg';
+
+// Gift hamper asset
+import giftHamper from '../assets/images/gift-hamper.jpg';
 
 // New flower candle assets
 import daisyBouquets from '../assets/images/daisy-bouquets.jpg';
@@ -321,36 +323,14 @@ export const shopProducts: Product[] = [
   // Category 6: Gift Box
   {
     id: 601,
-    name: 'Golden Opulence Gift Box',
+    name: "Veloura's Special Gift Hamper",
     category: 'Gift Box',
-    scent: 'Sandalwood · Vanilla · Saffron',
-    description: 'Our flagship gold-foiled gift box containing a signature candle, brass snuffer, and a jar of safety matches.',
-    price: 1899,
-    image: sourcing,
-    color: '#E8D3A9',
-    tags: ['Luxury Gift', 'Corporate Gift', 'Custom Card'],
-  },
-  {
-    id: 602,
-    name: 'Calm & Ground Self-Care Box',
-    category: 'Gift Box',
-    scent: 'Sage · Lavender · Lemongrass',
-    description: 'A soothing gift set containing Sage & Sea votives, lemongrass melts, and an organic cotton ritual towel.',
-    price: 999,
-    image: lemongrass,
-    color: '#E8D3A9',
-    tags: ['Wellness Gift', 'Self-Care', 'Organic Cotton'],
-  },
-  {
-    id: 603,
-    name: 'Sculptural Art Gift Set',
-    category: 'Gift Box',
-    scent: 'Cotton Candy · Sandalwood · Musk',
-    description: 'A luxury gift box featuring our pastel bubble cube and marble-finish Venus bust candles.',
-    price: 1199,
-    image: catDecorative,
-    color: '#E8D3A9',
-    tags: ['Home Decor', 'Curated Set', 'Aesthetic Shapes'],
+    scent: 'Raspberry · Floral · Wax Sachet',
+    description: 'A Box Full of Fragrance, Flowers & Love.',
+    price: 1499,
+    image: giftHamper,
+    color: '#F5C6C6',
+    tags: ['Gift Hamper', 'Premium Box', 'Flowers & Love'],
   },
 
   // Category 7: Customize Candles

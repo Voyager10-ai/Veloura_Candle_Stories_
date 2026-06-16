@@ -36,6 +36,13 @@ import bubbleCandle from '../assets/images/bubble-candle.jpg';
 import dessertCandle from '../assets/images/dessert-candle.png';
 import chaiCandle from '../assets/images/chai-candle.jpg';
 
+// New flower candle assets
+import daisyBouquets from '../assets/images/daisy-bouquets.jpg';
+import roseFlower from '../assets/images/rose-flower.jpg';
+import daisyFlower from '../assets/images/daisy-flower.jpg';
+import sunflowerCandle from '../assets/images/sunflower-candle.jpg';
+import peonyCandle from '../assets/images/peony-candle.jpg';
+
 import './ShopSection.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -187,6 +194,61 @@ export const shopProducts: Product[] = [
     image: bubbleCandle,
     color: '#E8D3A9',
     tags: ['Aesthetic Home', 'Gifting Idea', 'Bubble Mold'],
+  },
+  {
+    id: 308,
+    name: 'Daisy Bouquets',
+    category: 'Decorative Candles',
+    scent: 'Fresh Daisies · Green Leaves · Soft Musk',
+    description: 'Specially for return gifts',
+    price: 349,
+    image: daisyBouquets,
+    color: '#E8D3A9',
+    tags: ['Daisy Bouquet', 'Return Gifts', 'Handcrafted Wax'],
+  },
+  {
+    id: 309,
+    name: 'Rose Flower Candle',
+    category: 'Decorative Candles',
+    scent: 'Red Roses · Velvet Petals · Amber',
+    description: 'Aromatic, calm, breathtaking',
+    price: 199,
+    image: roseFlower,
+    color: '#E8D3A9',
+    tags: ['Rose Scent', 'Petals Mold', 'Calming Glow'],
+  },
+  {
+    id: 310,
+    name: 'Daisy Flower Candle',
+    category: 'Decorative Candles',
+    scent: 'Daisy Blooms · Sweet Nectar',
+    description: 'Handcrafted Blooms. Made to Melt Hearts.',
+    price: 99,
+    image: daisyFlower,
+    color: '#E8D3A9',
+    tags: ['Handcrafted Blooms', 'Daisy Mold', 'Mini Gift'],
+  },
+  {
+    id: 311,
+    name: 'Sunflower Candle',
+    category: 'Decorative Candles',
+    scent: 'Sunflower Nectar · Warm Honey',
+    description: 'Every Bloom Tells a Story.',
+    price: 99,
+    image: sunflowerCandle,
+    color: '#E8D3A9',
+    tags: ['Sunflower Mold', 'Bright Vibe', 'Handpoured'],
+  },
+  {
+    id: 312,
+    name: 'Peony Candle',
+    category: 'Decorative Candles',
+    scent: 'Blooming Peony · Rose Water',
+    description: 'Petals Poured in Wax',
+    price: 249,
+    image: peonyCandle,
+    color: '#E8D3A9',
+    tags: ['Peony Petals', 'Floral Scent', 'Aesthetic Home'],
   },
 
   // Category 4: Dessert Candles

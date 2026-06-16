@@ -5,16 +5,15 @@ import ConfettiButton from './ConfettiButton';
 
 // Import all product and category image assets
 import candleAmber from '../assets/images/candle-amber.png';
-import candleCedar from '../assets/images/candle-cedar.png';
+
 import lavender from '../assets/images/lavender.png';
 import lemongrass from '../assets/images/lemongrass.png';
 import catDecorative from '../assets/images/cat-decorative.png';
-import catColour from '../assets/images/cat-colour.png';
-import festivalCandlesImage from '../assets/images/festival-candles.png';
+
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
 import pouring from '../assets/images/pouring.png';
 import sourcing from '../assets/images/sourcing.png';
-import heroCandle from '../assets/images/hero-candle.png';
+
 import logo from '../assets/images/logo.png';
 
 // New premium candle assets
@@ -36,6 +35,12 @@ import bubbleCandle from '../assets/images/bubble-candle.jpg';
 // New dessert candle assets
 import dessertCandle from '../assets/images/dessert-candle.png';
 import chaiCandle from '../assets/images/chai-candle.jpg';
+
+// New festival candle assets
+import festivalMithai from '../assets/images/festival-mithai.jpg';
+import lotusUrli from '../assets/images/lotus-urli.jpg';
+import modakCandle from '../assets/images/modak-candle.jpg';
+import diyaCandle from '../assets/images/diya-candle.jpg';
 
 // New flower candle assets
 import daisyBouquets from '../assets/images/daisy-bouquets.jpg';
@@ -386,36 +391,47 @@ export const shopProducts: Product[] = [
   // Category 8: Festival Candles
   {
     id: 801,
-    name: 'Cedarwood Forest',
+    name: 'Festival Mithai Candles',
     category: 'Festival Candles',
-    scent: 'Cedar · Cypress · Pine Needle',
-    description: 'Woodland moss and towering evergreens capture the stillness of mountain air.',
-    price: 1199,
-    image: candleCedar,
-    color: '#8D9B82',
-    tags: ['Woodland', 'Deep Peace', 'Cleansing'],
+    scent: 'Traditional · Sweet · Festive',
+    description: 'Handcrafted Happiness, One Glow at a Time.',
+    price: 199,
+    image: festivalMithai,
+    color: '#F5A623',
+    tags: ['Mithai', 'Handcrafted', 'Festival Special'],
   },
   {
     id: 802,
-    name: 'Crimson Red Pillar Set',
+    name: 'Lotus Serenity Urli Candle',
     category: 'Festival Candles',
-    scent: 'Spiced Apple · Cinnamon',
-    description: 'A beautiful set of multi-height solid red pillar candles with a warm spicy fragrance.',
-    price: 599,
-    image: festivalCandlesImage,
-    color: '#E8D3A9',
-    tags: ['Solid Color Pillar', 'Spiced Apple', 'Holiday Vibe'],
+    scent: 'Lotus · Serene · Floral',
+    description: 'A Timeless Glow for Meaningful Moments.',
+    price: 329,
+    image: lotusUrli,
+    color: '#C5D8B4',
+    tags: ['Lotus', 'Urli', 'Meaningful Moments'],
   },
   {
     id: 803,
-    name: 'Ocean Blue Tealights Pack',
+    name: 'Modak Candle (Pack of 4)',
     category: 'Festival Candles',
-    scent: 'Sea Breeze · Jasmine',
-    description: 'A pack of 6 color-accented soy tealights for floating displays and candle holders.',
+    scent: 'Sweet · Traditional · Festive',
+    description: 'Modak candle specially for ganpati festival.',
     price: 249,
-    image: heroCandle,
-    color: '#E8D3A9',
-    tags: ['Tealight Pack', 'Sea Breeze Scent', '6-Piece Set'],
+    image: modakCandle,
+    color: '#F8E0B0',
+    tags: ['Modak', 'Ganpati', 'Pack of 4'],
+  },
+  {
+    id: 804,
+    name: 'Diya Candles',
+    category: 'Festival Candles',
+    scent: 'Warm · Traditional · Festive',
+    description: 'Specially for Diwali.',
+    price: 149,
+    image: diyaCandle,
+    color: '#E8C8A0',
+    tags: ['Diya', 'Diwali', 'Traditional'],
   },
 ];
 

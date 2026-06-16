@@ -6,7 +6,6 @@ import catPremium from '../assets/images/cat-premium.png';
 import catDecorative from '../assets/images/cat-decorative.png';
 import catDessert from '../assets/images/cat-dessert.png';
 import catWaxMelts from '../assets/images/cat-waxmelts.png';
-import catColour from '../assets/images/cat-colour.png';
 import festivalCandlesImage from '../assets/images/festival-candles.png';
 import './ProductShowcase.css';
 

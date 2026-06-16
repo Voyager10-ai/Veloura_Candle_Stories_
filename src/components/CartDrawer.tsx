@@ -31,6 +31,7 @@ const CartDrawer = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [shippingInfo, setShippingInfo] = useState({
     name: '',
+    email: '',
     phone: '',
     address: '',
     city: '',
@@ -99,6 +100,11 @@ const CartDrawer = ({
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
     if (!shippingInfo.name.trim()) newErrors.name = 'Name is required';
+    if (!shippingInfo.email.trim()) {
+      newErrors.email = 'Email address is required';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(shippingInfo.email.trim())) {
+      newErrors.email = 'Please enter a valid email address';
+    }
     if (!shippingInfo.phone.trim()) {
       newErrors.phone = 'Phone number is required';
     } else if (!/^\d{10}$/.test(shippingInfo.phone.trim())) {
@@ -130,6 +136,7 @@ const CartDrawer = ({
     return `✨ *New Order from Veloura Website* ✨\n\n` +
            `*Customer Details:*\n` +
            `• *Name:* ${shippingInfo.name}\n` +
+           `• *Email:* ${shippingInfo.email}\n` +
            `• *Phone:* ${shippingInfo.phone}\n` +
            `• *Address:* ${shippingInfo.address}, ${shippingInfo.city} - ${shippingInfo.pincode}\n\n` +
            `*Order Items:*\n${itemsList}\n\n` +
@@ -185,34 +192,31 @@ const CartDrawer = ({
       total,
     };
 
-    const webhookUrl = import.meta.env.VITE_ORDER_WEBHOOK_URL;
-    if (webhookUrl) {
-      try {
-        const response = await fetch(webhookUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(orderData),
-        });
-        if (!response.ok) {
-          throw new Error('Failed to submit order');
-        }
-      } catch (err) {
-        console.error('Webhook submission failed, fallback to simulation:', err);
+    try {
+      const response = await fetch('/api/place-order', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(orderData),
+      });
+
+      if (!response.ok) {
+        const errData = await response.json();
+        throw new Error(errData.error || 'Failed to submit order');
       }
-    } else {
-      // Simulation timeout to feel like a real action
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      triggerConfetti();
+      onClearCart();
+      onClose();
+      setStep('cart');
+      alert(`Thank you! Your Cash on Delivery order has been submitted successfully.\nAn email confirmation has been sent to ${shippingInfo.email}.\nOrder Number: ${orderNum}`);
+    } catch (err: any) {
+      console.error('Order submission failed:', err);
+      alert(`There was a problem submitting your order: ${err.message || 'Please try again later or contact us on WhatsApp.'}`);
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    setIsSubmitting(false);
-    triggerConfetti();
-    onClearCart();
-    onClose();
-    setStep('cart');
-    
-    alert(`Thank you! Your Cash on Delivery order has been submitted successfully.\nOrder Number: ${orderNum}`);
   };
 
   return (
@@ -371,6 +375,19 @@ const CartDrawer = ({
                       placeholder="e.g. Rahul Sharma"
                     />
                     {errors.name && <span className="cart-drawer__error">{errors.name}</span>}
+                  </div>
+
+                  <div className="cart-drawer__field">
+                    <label htmlFor="shipping-email">Email Address</label>
+                    <input
+                      type="email"
+                      id="shipping-email"
+                      name="email"
+                      value={shippingInfo.email}
+                      onChange={handleInputChange}
+                      placeholder="e.g. rahul@gmail.com"
+                    />
+                    {errors.email && <span className="cart-drawer__error">{errors.email}</span>}
                   </div>
 
                   <div className="cart-drawer__field">
